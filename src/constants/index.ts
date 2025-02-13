@@ -284,7 +284,7 @@ type Dimension3D = [number, number, number];
 type Sizes = {
   deskScale: number;
   deskPosition: Dimension3D;
-  cubePosition: Dimension3D;
+  dualsensePosition: Dimension3D;
   reactLogoPosition: Dimension3D;
   ringPosition: Dimension3D;
   targetPosition: Dimension3D;
@@ -298,13 +298,13 @@ export const calculateSizes = (
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-    cubePosition: isSmall
+    dualsensePosition: isSmall
       ? [4, -5, 0]
       : isMobile
       ? [5, -5, 0]
       : isTablet
       ? [5, -5, 0]
-      : [9, -5.5, 0],
+      : [12, -5.5, 0],
     reactLogoPosition: isSmall
       ? [3, 4, 0]
       : isMobile
@@ -325,6 +325,6 @@ export const calculateSizes = (
       ? [-9, -10, -10]
       : isTablet
       ? [-11, -7, -10]
-      : [-13, -13, -10],
+      : [-15, -10, -10],
   };
 };

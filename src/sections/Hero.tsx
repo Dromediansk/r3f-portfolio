@@ -7,10 +7,10 @@ import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants";
 import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
-import Cube from "../components/Cube";
 import Rings from "../components/Rings";
 import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
+import Dualsense from "../components/Dualsense";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -46,7 +46,7 @@ const Hero = () => {
             <group>
               <Target position={sizes.targetPosition} />
               <ReactLogo position={sizes.reactLogoPosition} />
-              <Cube position={sizes.cubePosition} />
+              <Dualsense position={sizes.dualsensePosition} />
               <Rings position={sizes.ringPosition} />
             </group>
             <ambientLight intensity={1} />
@@ -55,7 +55,7 @@ const Hero = () => {
         </Canvas>
       </div>
 
-      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+      <div className="absolute bottom-0 left-0 right-0 w-full z-10 c-space">
         <a href="#about" className="w-fit">
           <Button
             name="Let's work together"
