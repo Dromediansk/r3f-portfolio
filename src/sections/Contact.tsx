@@ -37,7 +37,9 @@ const Contact = () => {
       );
 
       setForm({ name: "", email: "", message: "" });
-      alert("Demo version: Email functionality is disabled. In a production environment, your message would have been sent successfully.");
+      alert(
+        "Demo version: Email functionality is disabled. In a production environment, your message would have been sent successfully."
+      );
     } catch (error) {
       console.error("Error sending email:", error);
       alert("An error occurred, please try again.");
@@ -57,7 +59,7 @@ const Contact = () => {
           className="absolute inset-0 min-h-screen"
         />
         <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
+          <h3 className="head-text mt-10">Let's talk</h3>
           <p className="text-lg text-white-600 mt-3">
             Whether you're looking to build a new website, improve your existing
             platform, or bring a unique project to life, I'm here to help.
@@ -104,6 +106,7 @@ const Contact = () => {
                 rows={5}
                 className="field-input"
                 placeholder="Hi, I'm interested in..."
+                style={{ resize: "none" }}
               />
             </label>
 
