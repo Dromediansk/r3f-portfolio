@@ -28,7 +28,7 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Miroslav",
+          to_name: "Daniel",
           from_email: form.email,
           to_email: import.meta.env.VITE_TO_EMAIL,
           message: form.message,

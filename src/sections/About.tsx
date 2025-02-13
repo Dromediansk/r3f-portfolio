@@ -7,7 +7,7 @@ const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("info@bitloom.sk");
+    navigator.clipboard.writeText(import.meta.env.VITE_TO_EMAIL);
 
     setHasCopied(true);
 
@@ -41,7 +41,7 @@ const About = () => {
             />
 
             <div>
-              <p className="grid-headtext">Hi, I'm Miroslav</p>
+              <p className="grid-headtext">Hi, I'm Daniel</p>
               <p className="grid-subtext">
                 With 6 years of experience, I have hones my skills in frontend
                 and mobile development, with a focus on animated 3D
@@ -133,7 +133,7 @@ const About = () => {
                   alt="copy"
                 />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
-                  info@bitloom.sk
+                  {import.meta.env.VITE_TO_EMAIL}
                 </p>
               </div>
             </div>

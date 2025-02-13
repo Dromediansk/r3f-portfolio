@@ -27,9 +27,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="text-white-500">
-        &copy; 2025 Miroslav. All rights reserved.
-      </p>
+      <p className="text-white-500">&copy; 2025 Daniel. All rights reserved.</p>
     </section>
   );
 };
