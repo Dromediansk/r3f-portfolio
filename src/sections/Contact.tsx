@@ -24,16 +24,16 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_a61buon",
-        "template_m1wahmj",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Miroslav",
           from_email: form.email,
-          to_email: "info@bitloom.sk",
+          to_email: import.meta.env.VITE_TO_EMAIL,
           message: form.message,
         },
-        { publicKey: "GyW-tezD7QP0khsoa" }
+        { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
       );
 
       setForm({ name: "", email: "", message: "" });
