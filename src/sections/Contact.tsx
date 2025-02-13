@@ -37,7 +37,7 @@ const Contact = () => {
       );
 
       setForm({ name: "", email: "", message: "" });
-      alert("Message sent successfully!");
+      alert("Demo version: Email functionality is disabled. In a production environment, your message would have been sent successfully.");
     } catch (error) {
       console.error("Error sending email:", error);
       alert("An error occurred, please try again.");
